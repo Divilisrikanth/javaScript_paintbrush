@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.vertical-leftsidebar {
+  height: 613px;
+  width: 200px;
+  border: 2px solid green;
+}
+.vertical-rightsidebar {
+  margin-left: 200px;
+  margin-top: -613px;
+  float: left;
+  height: 613px;
+  width: 1160px;
+  border: 2px solid green;
+}
+/*
+#first {
+  width: 20px;
+  height: 20px;
+  color: rgb(185, 12, 12);
+  padding-left: 5 px;
+  margin-top: 2 px;
+}*/
+.vertical-leftsidebar .box:nth-child(1) {
+  margin-left: 1px;
+  margin-right: 0.5px;
+  background-color: red;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: 5px;
+}
+.vertical-leftsidebar .box:nth-child(2) {
+  float: left;
+  margin-left: 28px;
+  margin-right: 1px;
+  background-color: green;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: -19px;
+}
+.vertical-leftsidebar .box:nth-child(3) {
+  float: left;
+  margin-left: 8px;
+  margin-right: 1px;
+  background-color: yellow;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: -19px;
+}
+.vertical-leftsidebar .box:nth-child(4) {
+  float: left;
+  margin-left: -77px;
+  background-color: orange;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: 3px;
+}
+.vertical-leftsidebar .box:nth-child(5) {
+  float: left;
+  margin-left: -50px;
+  background-color: blue;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: 3px;
+}
+.vertical-leftsidebar .box:nth-child(6) {
+  float: left;
+  margin-left: -22px;
+  background-color: palevioletred;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: 3px;
+}
+/*red,green,blue,yellow,orange,pink,voilet,black*/
+.vertical-leftsidebar .box:nth-child(7) {
+  float: left;
+  margin-left: -78px;
+  background-color: violet;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+}
+.vertical-leftsidebar .box:nth-child(8) {
+  float: left;
+  margin-left: -50px;
+  background-color: #800080;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+}
+.vertical-leftsidebar .box:nth-child(9) {
+  float: left;
+  margin-left: -22px;
+  background-color: #808000;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: 25px;
+}
+.vertical-leftsidebar .box:nth-child(10) {
+  float: left;
+  margin-left: -78px;
+  background-color: purple;
+  border: 2px solid black;
+  height: 20px;
+  width: 20px;
+  margin-top: 47px;
+}
