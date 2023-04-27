@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .vertical-leftsidebar {
   height: 613px;
   width: 200px;
   border: 2px solid green;
 }
-.vertical-rightsidebar {
+#canvas {
   margin-left: 200px;
   margin-top: -613px;
   float: left;
@@ -24,7 +25,7 @@
   padding-left: 5 px;
   margin-top: 2 px;
 }*/
-.vertical-leftsidebar .box:nth-child(1) {
+.vertical-leftsidebar .box1:nth-child(1) {
   margin-left: 1px;
   margin-right: 0.5px;
   background-color: red;
@@ -33,7 +34,7 @@
   width: 20px;
   margin-top: 5px;
 }
-.vertical-leftsidebar .box:nth-child(2) {
+.vertical-leftsidebar .box2:nth-child(2) {
   float: left;
   margin-left: 28px;
   margin-right: 1px;
@@ -43,7 +44,7 @@
   width: 20px;
   margin-top: -19px;
 }
-.vertical-leftsidebar .box:nth-child(3) {
+.vertical-leftsidebar .box3:nth-child(3) {
   float: left;
   margin-left: 8px;
   margin-right: 1px;
@@ -53,7 +54,7 @@
   width: 20px;
   margin-top: -19px;
 }
-.vertical-leftsidebar .box:nth-child(4) {
+.vertical-leftsidebar .box4:nth-child(4) {
   float: left;
   margin-left: -77px;
   background-color: orange;
@@ -62,7 +63,7 @@
   width: 20px;
   margin-top: 3px;
 }
-.vertical-leftsidebar .box:nth-child(5) {
+.vertical-leftsidebar .box5:nth-child(5) {
   float: left;
   margin-left: -50px;
   background-color: blue;
@@ -71,7 +72,7 @@
   width: 20px;
   margin-top: 3px;
 }
-.vertical-leftsidebar .box:nth-child(6) {
+.vertical-leftsidebar .box6:nth-child(6) {
   float: left;
   margin-left: -22px;
   background-color: palevioletred;
@@ -81,7 +82,7 @@
   margin-top: 3px;
 }
 /*red,green,blue,yellow,orange,pink,voilet,black*/
-.vertical-leftsidebar .box:nth-child(7) {
+.vertical-leftsidebar .box7:nth-child(7) {
   float: left;
   margin-left: -78px;
   background-color: violet;
@@ -90,7 +91,7 @@
   width: 20px;
   margin-top: 25px;
 }
-.vertical-leftsidebar .box:nth-child(8) {
+.vertical-leftsidebar .box8:nth-child(8) {
   float: left;
   margin-left: -50px;
   background-color: #800080;
@@ -99,7 +100,7 @@
   width: 20px;
   margin-top: 25px;
 }
-.vertical-leftsidebar .box:nth-child(9) {
+.vertical-leftsidebar .box9:nth-child(9) {
   float: left;
   margin-left: -22px;
   background-color: #808000;
@@ -108,7 +109,7 @@
   width: 20px;
   margin-top: 25px;
 }
-.vertical-leftsidebar .box:nth-child(10) {
+.vertical-leftsidebar .box10:nth-child(10) {
   float: left;
   margin-left: -78px;
   background-color: purple;
@@ -116,4 +117,9 @@
   height: 20px;
   width: 20px;
   margin-top: 47px;
+}
+.mycircle {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
 }

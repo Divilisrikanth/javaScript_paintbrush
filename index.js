@@ -1,51 +1,63 @@
-//let paintbrush =document.querySelector("body")
-// body.addEventListener("click",(e)=>{
-//     let angle =degrees();
-//     let c1 =randomColor();
-//     let c2 =randomColor();
-//     let c3 =randomColor();
-//     let c4 =randomColor();
-//     let bgman="linear-gradient("+angle+" ,"+c1 +" ,"+ c2 + " ,"+ c3 +" ,"+ c4 +")";
-//     console.log(angle);
-//     body.style.backgroundImage=bgman;
-// })
-// const canvas=document.getElementsByClassName("mycircle")
+const canvas=document.getElementById("canvas")
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
 
-// canvas.width = window.innerWidth;
-// canvas.height=window.innerHeight;
+ const ctx = canvas.getContext("2d");
 
-//  const context =canvas.getContext("2d")
-
-//  let mouse={
-//      x:undefined,
-//      y:undefined,
-//  };
-//  let hex =["0","1","2","3","4","5","6","7","8","9","A","B","c","D","E","F"];
-//  function randomColor(){
-//     let color="#";
-//      for(let i=0;i<6;i++){
-//         color += hex[Math.floor(Math.random()*16)];
-//      }
-//      return color;
-//  }
-//  canvas.addEventListener("click",(e)=>{
-//      mouse.x=e.x;
-//      mouse.y=e.y;
-//      console.log(mouse)
-//      context.beginPath()
-//      context.arc(mouse.x,mouse.y,50,0,2*Math.PI);
-//      context.stroke() 
-//      context.fillStyle=randomColor();
-//      context.fill()
+ let mouse={
+     x:undefined,
+     y:undefined,
+ };
+    let color="green";
+    document.getElementById("box1").addEventListener("click",(e)=>{
+        color="red";
+    });
+    document.getElementById("box2").addEventListener("click",(e)=>{
+        color="green";
+    });
+    document.getElementById("box3").addEventListener("click",(e)=>{
+        color="yellow";
+    });
+    document.getElementById("box3").addEventListener("click",(e)=>{
+        color="orange";
+    });
+    document.getElementById("box4").addEventListener("click",(e)=>{
+        color="blue";
+    });
+    document.getElementById("box5").addEventListener("click",(e)=>{
+        color="blue";
+    });
+    document.getElementById("box6").addEventListener("click",(e)=>{
+        color="palevoiletred";
+    });
+    document.getElementById("box7").addEventListener("click",(e)=>{
+        color="voilet";
+    });
+    document.getElementById("box8").addEventListener("click",(e)=>{
+        color="#800080";
+    });
+    document.getElementById("box9").addEventListener("click",(e)=>{
+        color="#808000";
+    });
+    document.getElementById("box10").addEventListener("click",(e)=>{
+        color="purple";
+    });
+   
+ canvas.addEventListener("mousemove",(e)=>{
+     console.log("hello")   
+     mouse.x=e.x;  
+     mouse.y=e.y;
+     console.log(mouse)
+     ctx.beginPath()
+     ctx.arc(mouse.x,mouse.y,50,0,2*Math.PI);
+     ctx.lineWidth=1;
+     ctx.fillStyle=color;
+     ctx.fill()
+     ctx.strokeStyle=color
+     ctx.stroke 
+       
      
-// });
-let div =
-            document.querySelector("mycircle");
-  
-        div.addEventListener(
-            "mousemove", function (e) {
-                x = e.offsetX;
-                y = e.offsetY;
-                div.style.backgroundColor
-                    = `rgb(${x}, ${y}, ${x - y})`;
 });
+ 
+
+
